@@ -1,12 +1,12 @@
 import config from "@/config";
+import shared from "@/shared";
 
 console.log(config);
 const {
   REACT_MICRO_APP,
   VUE_MICRO_APP,
-  ANGULAR_MICRO_APP,
-  STATIC_MICRO_APP,
 } = config;
+
 
 const apps = [
   /**
@@ -20,24 +20,14 @@ const apps = [
     entry: REACT_MICRO_APP,
     container: "#frame",
     activeRule: "/react",
+    props: { shared },
   },
   {
     name: "VueMicroApp",
     entry: VUE_MICRO_APP,
     container: "#frame",
     activeRule: "/vue",
-  },
-  {
-    name: "AngularMicroApp",
-    entry: ANGULAR_MICRO_APP,
-    container: "#frame",
-    activeRule: "/angular",
-  },
-  {
-    name: "StaticMicroApp",
-    entry: STATIC_MICRO_APP,
-    container: "#frame",
-    activeRule: "/static",
+    props: { shared },
   },
 ];
 

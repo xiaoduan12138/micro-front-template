@@ -1,5 +1,8 @@
 <template>
-  <section class="home-container">Home</section>
+<div>
+  <section class="home-container">这是一个qiankun框架的微前端基座</section>
+  <img alt='vue框架' src="@/assets/cmf1.png">
+  </div>
 </template>
 
 <script lang="ts">

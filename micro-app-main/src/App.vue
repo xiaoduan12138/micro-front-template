@@ -59,19 +59,14 @@ export default class App extends Vue {
       path: "/react/list"
     },
     {
-      key: "AngularMicroApp",
-      title: "Angular 主页",
-      path: "/angular"
+      key: "VueCommunication",
+      title: "Vue 通讯页",
+      path: "/vue/communication"
     },
     {
-      key: "AngularMicroAppList",
-      title: "Angular 列表页",
-      path: "/angular/list"
-    },
-    {
-      key: "StaticMicroApp",
-      title: "Static 微应用",
-      path: "/static"
+      key: "ReactCommunication",
+      title: "React 通讯页",
+      path: "/react/communication"
     }
   ];
 }

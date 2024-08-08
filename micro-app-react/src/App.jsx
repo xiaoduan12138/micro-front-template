@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import Home from "./pages/home";
 import List from "./pages/list";
+import Communication from "./pages/communication";
 
 const menus = [
   {
@@ -16,6 +17,11 @@ const menus = [
     route: "/list",
     title: "列表页",
   },
+  {
+    key: "react-communication",
+    route: "/communication",
+    title: "react通讯页"
+  }
 ];
 
 const BASE_NAME = window.__POWERED_BY_QIANKUN__ ? "/react" : "";
@@ -47,6 +53,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/list" component={List} />
+            <Route path="/communication" component={Communication} />
           </Switch>
         </Suspense>
       </section>

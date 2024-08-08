@@ -28,6 +28,11 @@ export default {
           key: "vue-list",
           route: "/list",
           title: "列表页"
+        },
+        {
+          key: "vue-communication",
+          route: "/communication",
+          title: "通讯页"
         }
       ]
     }
